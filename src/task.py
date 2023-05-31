@@ -14,8 +14,8 @@ def main():
     '''
     This is where the task is solved
     '''
-    gns= input()
-    ntour= input()
+    gns= int(input())
+    ntour= int(input())
     infos=[input().split() for _ in range(ntour)]
 
     
