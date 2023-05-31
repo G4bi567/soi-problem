@@ -17,15 +17,13 @@ def main():
     gns=int(input())
     ntour=int(input())
     infos=[input().split() for _ in range(ntour-1)]
-    print(infos)
     depl=[0]*gns
     pointgns = depl[:]
     
     for line in infos:
         depl[int(line[0])-1]+=int(line[1])
         pointgns[depl.index(max(depl))]+= 1
-        
-
+    print(pointgns.index(max(pointgns))+1)
     
 
 
