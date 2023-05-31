@@ -27,7 +27,7 @@ def main():
         database.append(m)
         n= n-m*math.factorial(_)
     database.reverse()
-    for v in len(database):
+    for v in database:
         print(v,end=" ")
         
 
