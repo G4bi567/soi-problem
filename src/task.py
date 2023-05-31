@@ -15,9 +15,10 @@ def main():
     This is where the task is solved
     '''
     
+    n = int(input())
 
-    donnees=input()
-    d=donnees.strip().split("\n")
+    for _ in range(n):
+        
 
     values=[float(x) for x in d]
     print(values)
