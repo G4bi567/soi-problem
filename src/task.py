@@ -14,13 +14,15 @@ def main():
     '''
     This is where the task is solved
     '''
-    liste_infos= input().strip().split()
-    def f(n,r):
-        if r == 1:
-            return [n]
-        else:
-            return [f(n,r-1)]
-    print(f(int(liste_infos[0]),int(liste_infos[1])))
+    n = int(input())
+    longueur = 2*n-1
+    
+    for i in range(longueur):
+        for j in range(longueur):
+            reste = min(i,j,longueur-j-1,longueur-i-1)
+            print(chr(ord("a")+reste), end="")
+        print()
+
 
 if __name__ == '__main__':
     main()
