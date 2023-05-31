@@ -15,10 +15,13 @@ def main():
     This is where the task is solved
     '''
     n = int(input())
-    taille = 2*n-1
+    longueur = 2*n-1
     
-    for i in range(taille):
-        for j in range(taille)
+    for i in range(longueur):
+        for j in range(longueur):
+            
+            print(chr(ord("a")), end="")
+        print()
 
 
 if __name__ == '__main__':
