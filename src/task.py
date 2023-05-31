@@ -21,8 +21,7 @@ def main():
     a-=1
     print(a)
     database=[]
-    print(1, end=" ")
-    for _ in range(a,1,-1):
+    for _ in range(a,0,-1):
         m= n//math.factorial(_)
         database.append(m)
         n= n-m*math.factorial(_)
