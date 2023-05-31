@@ -15,15 +15,47 @@ def main():
     This is where the task is solved
     '''
     
-    n = int(input())
-    
-    position_max = 0
-    valeur_max = float("-Inf")
-    for i in range(n):
-        valeur = int(input())
-        if valeur > valeur_max:
-            position_max = i
-    print(position_max)
+    """
+    7
+    1.120
+    1.292
+    1.343
+    3.322
+    4.789
+    -0.782
+    7.313
+    4.212
+    """
+    donnees=input()
+    d=donnees.strip().split("\n")
+
+    values=[float(x) for x in d]
+    print(values)
+    maxDiff = values[1]
+    data= [float(x) for x in d[2:]]
+    print(data)
+    i=1
+    n=0
+    l= [0 if abs(data[_]-data[_+1])<maxDiff else 1 for _ in range(len(data)-1)]
+    if 1 in l:
+        isOK=False
+    else:
+        isOK=True
+    while isOK==False:
+        i=0
+        while i < len(data)-1:
+            
+            data[i]=(data[i-1]+data[i+1])/2
+            i+=1
+        l= [0 if abs(data[_]-data[_+1])<maxDiff else 1 for _ in range(len(data)-1)]
+        if 1 in l:
+            isOK=False
+        else:
+            isOK=True
+        n+=1
+    print(n)
+        
+
     
 
 
