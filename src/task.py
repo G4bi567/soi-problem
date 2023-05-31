@@ -28,7 +28,7 @@ def main():
     else:
         isOK=True
     while isOK==False:
-        i=0
+        i=1
         while i < len(data)-1:
             
             data[i]=(data[i-1]+data[i+1])/2
