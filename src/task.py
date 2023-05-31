@@ -16,7 +16,7 @@ def main():
     '''
     n= int(input())
     a=1
-    while math.factorial(a)<n:
+    while math.factorial(a)<=n:
         a+=1 
     a-=1
     print(a)
