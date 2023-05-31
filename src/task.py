@@ -20,14 +20,15 @@ def main():
         a+=1 
     a-=1
     print(a)
-    db=[]
+    database=[]
     print(1, end=" ")
     for _ in range(a,1,-1):
         m= n//math.factorial(_)
-        db.append(m)
+        database.append(m)
         n= n-m*math.factorial(_)
-    db.reversed()
-    
+    database.reverse()
+    for _ in len(database):
+        print(_)
         
 
     
