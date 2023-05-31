@@ -14,34 +14,12 @@ def main():
     '''
     This is where the task is solved
     '''
-    
-    n = int(input())
-    maxDiff = float(input())
-
-
-    for _ in range(n):
-    data= [float(x) for x in d[2:]]
-    print(data)
-    i=1
-    n=0
-    l= [0 if abs(data[_]-data[_+1])<maxDiff else 1 for _ in range(len(data)-1)]
-    if 1 in l:
-        isOK=False
-    else:
-        isOK=True
-    while isOK==False:
-        i=0
-        while i < len(data)-1:
-            
-            data[i]=(data[i-1]+data[i+1])/2
-            i+=1
-        l= [0 if abs(data[_]-data[_+1])<maxDiff else 1 for _ in range(len(data)-1)]
-        if 1 in l:
-            isOK=False
-        else:
-            isOK=True
-        n+=1
-    print(n)
+    gns=int(input())
+    ntour=int(input())
+    infos=[input.split() for _ in range(ntour)]
+    depl=[0]*gns
+    for line in infos:
+        depl[int(line[0])]+= 
         
 
     
