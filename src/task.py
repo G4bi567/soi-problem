@@ -16,8 +16,10 @@ def main():
     '''
 
     def tete(n):
+        text1="0 ="
+        text2="0"
         if n=0:
-            return 0
+            return text2.replace("0","(0 + 0)"))
 
 
 if __name__ == '__main__':
