@@ -16,6 +16,9 @@ def main():
     '''
     n = int(input())
     values =[input().strip().split() for _ in range(n)]
+    print(values)
+    
+
     
 
 
