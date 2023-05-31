@@ -1,7 +1,7 @@
 '''
 This file contains a bug to illustrate the debugger in the gitpod environment.
 '''
-
+import math
 # Load tests from the `test1.in` file in the `tests` folder
 try:
     from pysoi import *
@@ -21,7 +21,9 @@ def main():
     a-=1
     print(a)
     for _ in range(a,1,-1):
-        print(n/)
+        m= n//factorial(a)
+        n= n-m*factorial(a)
+        print(m,end="")
 
     
 
