@@ -18,6 +18,7 @@ def main():
     nlivres=int(infos[0])+1
     njours=int(infos[1])+1
     liste_disponibilité= [0]*nlivres
+    d=
     for _ in range(njours):
         nclients=int(input())
         for _ in range(nclients):
