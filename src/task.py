@@ -16,9 +16,12 @@ def main():
     '''
     n = int(input())
     values =[input().strip().split() for _ in range(n)]
-    for valeur in values:
+    lvl=[-1]*n
+    for l,valeur in enumerate(values):
         for v in values:
-            if 
+            if int(valeur[0]) <= int(v[0]) and int(valeur[1]) >= int(v[1]):
+                lvl[l]+=1
+    print(lvl)
         
     
 
