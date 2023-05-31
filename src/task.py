@@ -22,9 +22,11 @@ def main():
     
     for line in infos:
         depl[int(line[0])-1]+=int(line[1])
-        pointgns[depl.index(max(depl))]+= 1
+        
         n=max(depl)
-        if 
+        if depl.count(n)==1:
+            pointgns[depl.index(max(depl))]+= 1
+
     print(pointgns.index(max(pointgns))+1)
     
 
