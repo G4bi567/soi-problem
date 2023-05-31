@@ -20,11 +20,10 @@ def main():
     liste_disponibilité= [0]*nlivres
     for _ in range(njours):
         nclients=int(input())
-        for _ in range(nclients:
+        for _ in range(nclients):
             reserv= input().strip().split()
-            if liste_disponibilité[reserv[0]]<1:
-                liste_disponibilité[reserv[0]]=0
-                liste_disponibilité[reserv[0]]=reserv[1]
+            if liste_disponibilité[int(reserv[0])]<1:
+                liste_disponibilité[int(reserv[0])]=int(reserv[1])
                 print(1)
             else:
                 print(0)
