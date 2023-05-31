@@ -20,11 +20,15 @@ def main():
         a+=1 
     a-=1
     print(a)
-    print(1, end="")
+    db=[]
+    print(1, end=" ")
     for _ in range(a,1,-1):
         m= n//math.factorial(_)
+        db.append(m)
         n= n-m*math.factorial(_)
-        print(m,end=" ")
+    db.reversed()
+    
+        
 
     
 
