@@ -16,13 +16,13 @@ def main():
     '''
     n= int(input())
     a=1
-    while factorial(a)>n:
+    while math.factorial(a)<n:
         a+=1 
     a-=1
     print(a)
     for _ in range(a,1,-1):
-        m= n//factorial(a)
-        n= n-m*factorial(a)
+        m= n//math.factorial(a)
+        n= n-m*math.factorial(a)
         print(m,end="")
 
     
