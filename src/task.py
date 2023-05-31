@@ -19,8 +19,8 @@ def main():
     
     for i in range(longueur):
         for j in range(longueur):
-            
-            print(chr(ord("a")), end="")
+            reste = min(i,j,longueur-j-1,longueur-i-1)
+            print(chr(ord("a")+reste), end="")
         print()
 
 
