@@ -14,21 +14,12 @@ def main():
     '''
     This is where the task is solved
     '''
-    infos=input().strip().split()
-    nlivres=int(infos[0])+1
-    njours=int(infos[1])
-    liste_disponibilité= [0]*nlivres
-    d=0
-    for _ in range(njours):
-        nclients=int(input().strip())
-        for _ in range(nclients):
-            reserv= input().strip().split()
-            if liste_disponibilité[int(reserv[0])]<1:
-                liste_disponibilité[int(reserv[0])]=int(reserv[1])
-                print(1)
-            else:
-                print(0)
-        liste_disponibilité = [x-1 for x in liste_disponibilité ]
+    n = int(input())
+    taille = 2*n-1
+    
+    for i in range(taille):
+        for j in range(taille)
+
 
 if __name__ == '__main__':
     main()
