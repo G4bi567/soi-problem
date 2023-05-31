@@ -19,7 +19,7 @@ def main():
     maxDiff = float(input())
 
     data = [float(input()) for _ in range(n)]
-
+    datacopy=data
     i=1
     n=0
     l= [0 if abs(data[_]-data[_+1])<maxDiff else 1 for _ in range(len(data)-1)]
@@ -31,8 +31,9 @@ def main():
         i=1
         while i < len(data)-1:
             
-            data[i]=(data[i-1]+data[i+1])/2
+            datacopy[i]=(data[i-1]+data[i+1])/2
             i+=1
+        data=datacopy
         l= [0 if abs(data[_]-data[_+1])<maxDiff else 1 for _ in range(len(data)-1)]
         if 1 in l:
             isOK=False
