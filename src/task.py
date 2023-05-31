@@ -17,11 +17,7 @@ def main():
     n = int(input())
     longueur = 2*n-1
     
-    for i in range(longueur):
-        for j in range(longueur):
-            reste = min(i,j,longueur-j-1,longueur-i-1)
-            print(chr(ord("a")+reste), end="")
-        print()
+    def 0
 
 
 if __name__ == '__main__':
