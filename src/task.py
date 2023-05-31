@@ -25,12 +25,10 @@ def main():
             reserv= input().strip().split()
             if liste_disponibilité[int(reserv[0])]<1:
                 liste_disponibilité[int(reserv[0])]=int(reserv[1])
-                d+=1
-        if d == nclients:
-            print(1)
-        else:
-            print(0)
-
+                print(1)
+            else:
+                print(0)
+        liste_disponibilité = [x-1 for x in liste_disponibilité ]
 
 if __name__ == '__main__':
     main()
