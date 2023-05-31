@@ -17,8 +17,9 @@ def main():
     infos=input().strip().split()
     nlivres=int(infos[0])+1
     njours=int(infos[1])+1
-    infos_livres=[input().strip().split() for _ in range(njours)]
-    print(infos_livres)
+
+    for _ in range(njours):
+        nclients
 
 
 if __name__ == '__main__':
