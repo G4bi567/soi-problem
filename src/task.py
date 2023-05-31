@@ -19,7 +19,10 @@ def main():
     while factorial(a)>n:
         a+=1 
     a-=1
-    for _ in range 
+    print(a)
+    for _ in range(a,1,-1):
+        print(n/)
+
     
 
 
