@@ -14,7 +14,9 @@ def main():
     '''
     This is where the task is solved
     '''
-    
+    ntour= input()
+    gns= input
+    for _ in range
         
 
     
