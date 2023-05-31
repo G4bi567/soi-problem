@@ -14,21 +14,24 @@ def main():
     '''
     This is where the task is solved
     '''
-    gns=int(input())
-    ntour=int(input())
-    infos=[input().split() for _ in range(ntour-1)]
-    depl=[0]*gns
-    pointgns = depl[:]
-    
-    for line in infos:
-        depl[int(line[0])-1]+=int(line[1])
-        
-        n=max(depl)
-        if depl.count(n)==1:
-            pointgns[depl.index(max(depl))]+= 1
-
-    print(pointgns.index(max(pointgns))+1)
-    
+    donnees=input()
+    d=donnees.strip()
+    nblivres= int(d[0])
+    bd= [0]*(nblivres+1)
+    nbjours=int(d[2])
+    d=d[4:]
+    nbre=0
+    for i in range(nbjours):
+        nbclients=int(d[nbre])
+        for n in range(nbclients):
+            if bd[int(d[nbre+2+4*n])] <=0:
+                print(1)
+                bd[int(d[nbre+2+4*n])]=0
+                bd[int(d[nbre+2+4*n])]=int(d[nbre+4+4*n])
+            else:
+                print(0)
+        nbre += 2+4*nbclients
+        bd = [x-1 for x in bd]
 
 
 if __name__ == '__main__':
