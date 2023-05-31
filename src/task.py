@@ -16,15 +16,10 @@ def main():
     '''
     
     n = int(input())
+    maxDiff = float(input())
 
-    for _ in range(n):
-        
+    data = [float(input()) for _ in range(n)]
 
-    values=[float(x) for x in d]
-    print(values)
-    maxDiff = values[1]
-    data= [float(x) for x in d[2:]]
-    print(data)
     i=1
     n=0
     l= [0 if abs(data[_]-data[_+1])<maxDiff else 1 for _ in range(len(data)-1)]
