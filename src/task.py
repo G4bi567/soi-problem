@@ -14,7 +14,11 @@ def main():
     '''
     This is where the task is solved
     '''
-    nlivres,njours=input().split()
+    infos=input().strip().split()
+    nlivres=infos[0]+1
+    njours=infos[1]+1
+    for _ in range(njours):
+        
 
 
 if __name__ == '__main__':
