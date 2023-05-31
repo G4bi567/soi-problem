@@ -19,7 +19,7 @@ def main():
         if r == 1:
             return [n]
         else:
-            f(n,r-1)
+            return [f(n,r-1)]
     print(f(int(liste_infos[0]),int(liste_infos[1])))
 
 if __name__ == '__main__':
