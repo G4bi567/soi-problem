@@ -14,10 +14,9 @@ def main():
     '''
     This is where the task is solved
     '''
+    gns= input()
     ntour= input()
-    gns= input
-    for _ in range
-        
+    infos=[input().split() for _ in range(ntour)]
 
     
 
