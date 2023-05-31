@@ -18,17 +18,18 @@ def main():
     nlivres=int(infos[0])+1
     njours=int(infos[1])+1
     liste_disponibilité= [0]*nlivres
-    d=
+    d=0
     for _ in range(njours):
         nclients=int(input())
         for _ in range(nclients):
             reserv= input().strip().split()
             if liste_disponibilité[int(reserv[0])]<1:
                 liste_disponibilité[int(reserv[0])]=int(reserv[1])
-                print(1)
-            else:
-                print(0)
-        print(nclients)
+                d+=1
+        if d == nclients:
+            print(1)
+        else:
+            print(0)
 
 
 if __name__ == '__main__':
