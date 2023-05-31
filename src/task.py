@@ -23,7 +23,7 @@ def main():
             return text2.replace("0","(0 + 0)")
         else:
             return tete(n-1).replace("0","(0 + 0)")
-
+    tete(2)
 
 if __name__ == '__main__':
     main()
