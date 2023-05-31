@@ -18,6 +18,7 @@ def main():
     nlivres=int(infos[0])+1
     njours=int(infos[1])+1
     infos_livres=[input().strip().split() for _ in range(njours)]
+    print(infos_livres)
 
 
 if __name__ == '__main__':
