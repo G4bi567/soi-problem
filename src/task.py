@@ -16,11 +16,11 @@ def main():
     '''
     infos=input().strip().split()
     nlivres=int(infos[0])+1
-    njours=int(infos[1])+1
+    njours=int(infos[1])
     liste_disponibilité= [0]*nlivres
     d=0
     for _ in range(njours):
-        nclients=int(input())
+        nclients=int(input().strip())
         for _ in range(nclients):
             reserv= input().strip().split()
             if liste_disponibilité[int(reserv[0])]<1:
