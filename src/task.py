@@ -15,17 +15,7 @@ def main():
     This is where the task is solved
     '''
     
-    """
-    7
-    1.120
-    1.292
-    1.343
-    3.322
-    4.789
-    -0.782
-    7.313
-    4.212
-    """
+
     donnees=input()
     d=donnees.strip().split("\n")
 
