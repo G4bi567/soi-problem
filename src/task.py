@@ -14,16 +14,10 @@ def main():
     '''
     This is where the task is solved
     '''
-    def tete(n):
-        text1="0 ="
-        text2="0"
-        if n==0:
-            return text1+text2
-        elif n==1:
-            return text2.replace("0","(0 + 0)")
-        else:
-            return tete(n-1).replace("0","(0 + 0)")
-    tete(2)
+    n = int(input())
+    values =[input().strip().split() for _ in range(n)]
+    
+
 
 if __name__ == '__main__':
     main()
