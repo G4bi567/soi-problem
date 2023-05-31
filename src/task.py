@@ -14,10 +14,10 @@ def main():
     '''
     This is where the task is solved
     '''
-    n = int(input())
-    longueur = 2*n-1
-    
-    def 0
+
+    def tete(n):
+        if n=0:
+            return 0
 
 
 if __name__ == '__main__':
