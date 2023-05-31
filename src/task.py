@@ -14,9 +14,13 @@ def main():
     '''
     This is where the task is solved
     '''
-    liste_infos= input().strip().aplit()
+    liste_infos= input().strip().split()
     def f(n,r):
-        
+        if r == 1:
+            return [n]
+        else:
+            f(n,r-1)
+    print(f(int(liste_infos[0]),int(liste_infos[1])))
 
 if __name__ == '__main__':
     main()
