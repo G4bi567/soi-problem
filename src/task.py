@@ -17,9 +17,13 @@ def main():
     infos=input().strip().split()
     nlivres=int(infos[0])+1
     njours=int(infos[1])+1
-
+    liste_disponibilité= [0]*nlivres
     for _ in range(njours):
-        nclients
+        nclients=int(input())
+        for _ in nclients:
+            reserv= input().strip().split()
+            
+        print(nclients)
 
 
 if __name__ == '__main__':
