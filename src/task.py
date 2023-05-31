@@ -15,8 +15,11 @@ def main():
     This is where the task is solved
     '''
     n= int(input())
-    
-        
+    a=1
+    while factorial(a)>n:
+        a+=1 
+    a-=1
+    for _ in range 
     
 
 
