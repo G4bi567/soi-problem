@@ -16,7 +16,7 @@ def main():
     '''
     n = int(input())
     values =[input().strip().split() for _ in range(n)]
-    values_list=[range(values[i][0],values[i][1]+1) for i in range(n)]
+    values_list=[list(range(int(values[i][0]),int(values[i][1])+1)) for i in range(n)]
     print(values)
     
 
