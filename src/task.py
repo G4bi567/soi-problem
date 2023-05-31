@@ -18,8 +18,10 @@ def main():
     ntour=int(input())
     infos=[input.split() for _ in range(ntour)]
     depl=[0]*gns
+    pointgns = depl[:]
     for line in infos:
-        depl[int(line[0])]+= 
+        depl[int(line[0])]+=int(line[1])
+        pointgns 
         
 
     
